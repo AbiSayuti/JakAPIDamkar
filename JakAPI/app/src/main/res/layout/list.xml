@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Pos Pemadam"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txtNamePosPemadam"
+        android:textStyle="bold"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txtAlamat"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:backgroundTint="#000"/>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abisayuti.jakapi.Activity.DetailActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Pos"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txtDetailNamaPos"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txtDetailAlamat"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kelurahan"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txtDetaiKelurahan"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RT - RW"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txtDetailRtRw"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latitude"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txtDetailLat"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Longitude"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txtDetailLong"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>
