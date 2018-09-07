@@ -38,10 +38,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     public void onBindViewHolder(CustomAdapter.MyViewHolder holder, final int position) {
         holder.name.setText("Name : " +data.get(position).getPOSPEMADAM());
         holder.Alamat.setText("From : " +data.get(position).getALAMAT());
-        holder.Rt_Rw.setText("Brand : " +data.get(position).getRTRW());
-        holder.Kelurahan.setText("Price : "+data.get(position).getKELURAHAN());
-        holder.Lat.setText("Condition "+data.get(position).getLAT());
-        holder.Long.setText("Condition "+data.get(position).getLNG());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,7 +59,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView name,Alamat,Rt_Rw,Kelurahan,Lat,Long;
+        TextView name,Alamat;
         public MyViewHolder(View itemView) {
             super(itemView);
 

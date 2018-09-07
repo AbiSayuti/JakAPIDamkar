@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nama Pos Pemadam"
+        android:text="@string/POS"
         android:layout_marginLeft="10dp"
         android:id="@+id/txtNamePosPemadam"
         android:textStyle="bold"
@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Alamat"
+        android:text="@string/ALAMAT"
         android:layout_marginLeft="10dp"
         android:id="@+id/txtAlamat"
         android:paddingTop="10dp"
@@ -28,6 +28,6 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:backgroundTint="#000"/>
+        android:background="@color/colorPembatas"/>
 
 </LinearLayout>

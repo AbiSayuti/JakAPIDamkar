@@ -15,15 +15,13 @@ import com.abisayuti.jakapi.R;
 
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.RcViewDakar)
+//    @BindView(R.id.RcViewDakar)
     RecyclerView RcViewDakar;
     private String token = "ljLu2zZ5/QYExUMVGhIKehc0btcIkAVpgDCYkPzTMoHHl9Mi0s9ZZAiYXD9v3sEH";
     List<DataItem> dataPos;
@@ -34,10 +32,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
-
-
-        RcViewDakar.setLayoutManager(new LinearLayoutManager(this));
+//        ButterKnife.bind(this);
+        RcViewDakar = (RecyclerView) findViewById(R.id.RcViewDakar);
         getDakar();
     }
 

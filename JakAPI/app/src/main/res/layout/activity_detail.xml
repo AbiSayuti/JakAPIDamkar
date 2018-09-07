@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nama Pos"
+        android:text="@string/POS"
         android:layout_marginLeft="10dp"
         android:id="@+id/txtDetailNamaPos"
         android:paddingTop="10dp"
@@ -21,7 +21,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Alamat"
+        android:text="@string/ALAMAT"
         android:layout_marginLeft="10dp"
         android:id="@+id/txtDetailAlamat"
         android:paddingTop="10dp"
@@ -30,7 +30,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Kelurahan"
+        android:text="@string/Kelurahan"
         android:layout_marginLeft="10dp"
         android:id="@+id/txtDetaiKelurahan"
         android:paddingTop="10dp"
@@ -39,7 +39,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="RT - RW"
+        android:text="@string/RTRW"
         android:layout_marginLeft="10dp"
         android:id="@+id/txtDetailRtRw"
         android:paddingTop="10dp"
@@ -48,7 +48,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Latitude"
+        android:text="@string/lat"
         android:layout_marginLeft="10dp"
         android:id="@+id/txtDetailLat"
         android:paddingTop="10dp"
@@ -57,7 +57,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Longitude"
+        android:text="@string/longg"
         android:layout_marginLeft="10dp"
         android:id="@+id/txtDetailLong"
         android:paddingTop="10dp"

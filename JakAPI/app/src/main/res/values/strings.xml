@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">JakAPI</string>
+    <string name="POS">Nama POS</string>
+    <string name="ALAMAT">Alamat</string>
+    <string name="Kelurahan">Keluarahan</string>
+    <string name="RTRW">RT - RW</string>
+    <string name="lat">Latitude</string>
+    <string name="longg">Longitude</string>
     <string name="title_activity_detail">DetailActivity</string>
 </resources>

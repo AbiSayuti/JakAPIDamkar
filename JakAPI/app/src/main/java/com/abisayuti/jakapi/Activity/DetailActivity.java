@@ -31,10 +31,10 @@ public class DetailActivity extends AppCompatActivity {
         lats = aa.getStringExtra("lat");
         longs = aa.getStringExtra("long");
 
-        dtlname.setText(names);
-        dtlalamat.setText(alamats);
-        dtlRTRW.setText(RtRws);
-        dtkelurahan.setText(kelurahans);
+        dtlname.setText("Nama Pos "+ names);
+        dtlalamat.setText("Alamat "+alamats);
+        dtlRTRW.setText("RT RW "+RtRws);
+        dtkelurahan.setText("Kelurahan "+kelurahans);
         dtllat.setText(lats);
         dtllong.setText(longs);
 
