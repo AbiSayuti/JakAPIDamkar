@@ -15,48 +15,51 @@ import com.abisayuti.jakapi.R;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView rcviewDakar;
+    @BindView(R.id.RcViewDakar)
+    RecyclerView RcViewDakar;
     private String token = "ljLu2zZ5/QYExUMVGhIKehc0btcIkAVpgDCYkPzTMoHHl9Mi0s9ZZAiYXD9v3sEH";
     List<DataItem> dataPos;
     CustomAdapter adapter;
-
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
 
-        rcviewDakar = findViewById(R.id.RcViewDakar);
-        rcviewDakar.setLayoutManager(new LinearLayoutManager(this));
+
+        RcViewDakar.setLayoutManager(new LinearLayoutManager(this));
         getDakar();
     }
 
     private void getDakar() {
         ApiService api = InstanceRetrofit.getInstance();
-        retrofit2.Call<ResponsePostDamkar> call = api.requestPostPemadam(token);
+        Call<ResponsePostDamkar> call = api.requestPostPemadam(token);
         call.enqueue(new Callback<ResponsePostDamkar>() {
             @Override
             public void onResponse(Call<ResponsePostDamkar> call, Response<ResponsePostDamkar> response) {
                 if (response.body().getStatus().equals("success")) {
-                    if (response.body().getStatus().equals("success")){
+                    if (response.body().getStatus().equals("success")) {
                         dataPos = response.body().getData();
                         adapter = new CustomAdapter(MainActivity.this, dataPos);
-                        rcviewDakar.setLayoutManager(new LinearLayoutManager(MainActivity.this));
-                        rcviewDakar.setAdapter(adapter);
+                        RcViewDakar.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+                        RcViewDakar.setAdapter(adapter);
                     }
                 }
             }
 
             @Override
             public void onFailure(Call<ResponsePostDamkar> call, Throwable t) {
-                Toast.makeText(MainActivity.this, ""+t.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "" + t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
